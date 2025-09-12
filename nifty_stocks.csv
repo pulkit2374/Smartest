@@ -1,0 +1,47 @@
+Ticker,Name,Sector
+TCS.NS,Tata Consultancy Services,Technology
+INFY.NS,Infosys,Technology
+WIPRO.NS,Wipro,Technology
+HCLTECH.NS,HCL Technologies,Technology
+TECHM.NS,Tech Mahindra,Technology
+RELIANCE.NS,Reliance Industries,Energy
+ONGC.NS,Oil & Natural Gas Corp,Energy
+BPCL.NS,Bharat Petroleum,Energy
+IOC.NS,Indian Oil Corporation,Energy
+HDFCBANK.NS,HDFC Bank,Financial Services
+ICICIBANK.NS,ICICI Bank,Financial Services
+KOTAKBANK.NS,Kotak Mahindra Bank,Financial Services
+SBIN.NS,State Bank of India,Financial Services
+AXISBANK.NS,Axis Bank,Financial Services
+BAJFINANCE.NS,Bajaj Finance,Financial Services
+ITC.NS,ITC Ltd,FMCG
+HINDUNILVR.NS,Hindustan Unilever,FMCG
+NESTLEIND.NS,Nestle India,FMCG
+BRITANNIA.NS,Britannia Industries,FMCG
+MARUTI.NS,Maruti Suzuki,Automobile
+TATAMOTORS.NS,Tata Motors,Automobile
+M&M.NS,Mahindra & Mahindra,Automobile
+BAJAJ-AUTO.NS,Bajaj Auto,Automobile
+SUNPHARMA.NS,Sun Pharmaceutical,Healthcare
+CIPLA.NS,Cipla,Healthcare
+DRREDDY.NS,Dr Reddy's Laboratories,Healthcare
+DIVISLAB.NS,Divis Laboratories,Healthcare
+TITAN.NS,Titan Company,Consumer Durables
+ASIANPAINT.NS,Asian Paints,Consumer Durables
+ULTRACEMCO.NS,UltraTech Cement,Construction
+GRASIM.NS,Grasim Industries,Construction
+ADANIGREEN.NS,Adani Green Energy,Energy
+ADANIPORTS.NS,Adani Ports,Infrastructure
+POWERGRID.NS,Power Grid Corporation,Energy
+NTPC.NS,NTPC Ltd,Energy
+BHARTIARTL.NS,Bharti Airtel,Telecom
+HCLTECH.NS,HCL Technologies,Technology
+LT.NS,Larsen & Toubro,Infrastructure
+JSWSTEEL.NS,JSW Steel,Metals
+TATASTEEL.NS,Tata Steel,Metals
+VEDL.NS,Vedanta,Metals
+HDFCLIFE.NS,HDFC Life Insurance,Financial Services
+SBILIFE.NS,SBI Life Insurance,Financial Services
+ICICIPRULI.NS,ICICI Prudential Life,Financial Services
+HEROMOTOCO.NS,Hero MotoCorp,Automobile
+EICHERMOT.NS,Eicher Motors,Automobile

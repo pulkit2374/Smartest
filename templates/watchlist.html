@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Watchlist - SMARTEST</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- 🔙 Unified Navbar -->
+  <nav class="navbar navbar-dark bg-black px-4 py-2" style="height: 64px;">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!-- Left: Back Button -->
+    <a href="/" class="btn btn-back-dark">⬅ Back to Home</a>
+
+    <!-- Center: Logo + Title -->
+    <a class="navbar-brand d-flex justify-content-center align-items-center mx-auto gap-2" href="/"
+       style="font-size: 1.6rem; font-weight: bold; color: white;">
+      <img src="{{ url_for('static', filename='favicon.png') }}" alt="Logo" height="40"
+           style="margin-bottom: 2px;">
+      SMARTEST
+    </a>
+
+    <!-- Right: Empty div to balance space -->
+    <div style="width: 130px;"></div>
+  </div>
+</nav>
+
+
+
+
+
+
+  <div class="container py-4">
+    <h2 class="mb-4 text-center">⭐ Your Watchlist</h2>
+
+    <div class="mb-4">
+  <form method="POST" action="{{ url_for('add_watchlist') }}" class="row g-3 justify-content-center">
+    <div class="col-md-4">
+      <input type="text" class="form-control" name="ticker" placeholder="Enter Ticker (e.g., INFY)" required>
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control" name="name" placeholder="Enter Company Name" required>
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-success w-100">Add to Watchlist</button>
+    </div>
+  </form>
+</div>
+
+
+    {% if watchlist %}
+  <table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th>Ticker</th>
+      <th>Name</th>
+      <th>Saved On</th>
+      <th>Saved Price</th>
+      <th>Live Price</th>
+      <th>Score</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for stock in watchlist %}
+    <tr>
+      <td>{{ stock.ticker }}</td>
+      <td>{{ stock.name }}</td>
+      <td>{{ stock.saved_on }}</td>
+      <td>{{ stock.saved_price if stock.saved_price is defined else 'N/A' }}</td>
+      <td>{{ stock.live_price }}</td>
+      <td>{{ stock.score }}</td>
+      <td>
+        <a href="/delete_watchlist/{{ stock.ticker }}" class="btn btn-sm btn-danger">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+    {% else %}
+    <p class="text-center">No stocks in your watchlist.</p>
+    {% endif %}
+  </div>
+
+</body>
+
+</html>

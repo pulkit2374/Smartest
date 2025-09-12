@@ -1,0 +1,189 @@
+/* === Base Layout === */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.card {
+  padding: 1.5rem !important;
+}
+
+/* === Scroll Variants === */
+body.page-filter,
+body.portfolio-scroll {
+  overflow-y: auto !important;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+
+/* === Navbar === */
+.navbar {
+  height: 64px;
+  background-color: #000000 !important;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.navbar .nav-link {
+  color: #e0e0e0 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #00bcd4 !important;
+}
+
+/* === Buttons === */
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.btn-sm {
+  height: 38px;
+  line-height: 1.5;
+  padding-top: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+/* === Custom Dark Buttons === */
+.btn-custom-dark,
+.btn-back-dark {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  padding: 0.65rem 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-custom-dark:hover,
+.btn-back-dark:hover {
+  background-color: #2b2b2b;
+  color: #00bcd4;
+  border-color: #00bcd4;
+}
+
+.btn-back-dark {
+  font-size: 0.95rem;
+}
+
+/* === Table === */
+.table {
+  font-size: 0.9rem;
+}
+
+.table thead th {
+  color: #ffffff;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+/* === Card & Scroll Helpers === */
+.card {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.section-scrollable {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.gainers-losers-container {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.gainers-losers-container li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.gainers-losers-container ul {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* === Form & Inputs === */
+form .form-label {
+  font-size: 0.85rem;
+}
+
+form .form-control {
+  padding: 0.4rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* === Search Input === */
+#searchInput {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 0.65rem 1rem;
+}
+
+#searchInput::placeholder {
+  color: #888;
+}
+
+/* === Section Height (Search/Home) === */
+#home.section {
+  height: 220px !important;
+}
+
+/* === Top Spacing Row === */
+.row.mb-4.mt-4 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* === Page-specific scroll unlock === */
+.page-filter .card {
+  height: auto !important;
+  overflow: visible !important;
+}
