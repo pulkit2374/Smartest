@@ -11,7 +11,7 @@ A full-stack web application to analyze and rank Indian NSE stocks using a **10-
 ## **Demo**
 
 <img width="1903" height="961" alt="Smartest_1" src="https://github.com/user-attachments/assets/990493bd-fdd1-4712-a899-df3da8fd7a7f" />
-
+---
 <img width="1909" height="968" alt="Smartest_2" src="https://github.com/user-attachments/assets/9e6b1c06-52a9-4b98-ac34-b57abb56dc8b" />
 
 
