@@ -1,6 +1,6 @@
 
 
-# **SMARTEST – Stock Market Analysis, Ranking & Evaluation Tool**
+# **SMARTEST – Stock Market Analysis, Ranking & Technical Evaluation Scoring Tool**
 
 🔗 **Live Demo:** [https://smartest-pm.up.railway.app/]
 
